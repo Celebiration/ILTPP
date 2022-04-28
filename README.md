@@ -1,2 +1,2 @@
-# ILTP
-Isoform-level translation initiation site predictor
+# ILTPP
+Isoform-level translation initiation site profile predictor
