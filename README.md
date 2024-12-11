@@ -23,10 +23,13 @@ Overlapping status between transcripts pre-filtered from all 5 samples:
 ![image-20241211145045154](README.assets/image-20241211145045154.png)
 
 For each sample, the standardized translation signal for every transcript is computed as:
+
 $$
-\hat{s}=\frac{\#QTI-seq\ reads}{TPM}
+\hat{s}=\frac{\\#QTI-seq\ reads}{TPM}
 $$
+
 Considering the potential false signals of QTI-seq and possible sequencing differences between experiments, we selected 572 transcripts common to all samples and calculated the mean signal. We then computed the median of the ratios of this mean to the transcript signals in each sample. This median was used to multiply the signals of each sample to correct for batch effects:
+
 $$
 k_i=median(\frac{\overline{\tau_{i,j}}}{\tau_{i,j}})
 $$
